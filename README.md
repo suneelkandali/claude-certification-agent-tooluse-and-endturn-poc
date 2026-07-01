@@ -1,4 +1,4 @@
-# PeaceOfCode — Claude Agentic Loop Demo
+# Claude Agentic Loop Demo
 
 A minimal, self-contained demonstration of the **Anthropic tool-use agentic loop** pattern in Python.
 
@@ -13,7 +13,7 @@ The agent answers customer questions about orders by calling a `lookup_order` to
 ## Project Structure
 
 ```
-peaceofcode/
+claude-certification-agent-tooluse-and-endturn-poc/
 ├── agent.py          # The agentic loop implementation
 ├── api_check.py      # (optional) quick API connectivity test
 ├── requirements.txt  # Python dependencies
