@@ -1,4 +1,4 @@
-# Claude Agentic Loop Demo
+# Claude Agentic Tool Use and Loop Demo
 
 A minimal, self-contained demonstration of the **Anthropic tool-use agentic loop** pattern in Python.
 
@@ -25,30 +25,43 @@ claude-certification-agent-tooluse-and-endturn-poc/
 
 ## Prerequisites
 
-- Python 3.10+
+- **Python 3.10+** — macOS ships with Python 2.x by default, so you'll likely need to install Python 3.
+  - Install via [Homebrew](https://brew.sh/): `brew install python@3.12`
+  - Or download from [python.org](https://www.python.org/downloads/)
 - An [Anthropic API key](https://console.anthropic.com/)
 
 ---
 
 ## Setup
 
-1. **Clone the repo** (or copy the files to your machine).
-
-2. **Create a virtual environment** (recommended):
+1. **Clone the repository:**
 
    ```bash
-   python -m venv venv
-   source venv/bin/activate    # macOS / Linux
-   venv\Scripts\activate       # Windows
+   git clone https://github.com/suneelkandali/claude-certification-agent-tooluse-and-endturn-poc
    ```
 
-3. **Install dependencies:**
+2. **Navigate to the project folder:**
+
+   ```bash
+   cd claude-certification-agent-tooluse-and-endturn-poc
+   ```
+
+3. **Create a virtual environment** (recommended):
+
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+   > **Note:** On macOS, use `python3` instead of `python` to ensure you're using Python 3. The `source venv/bin/activate` command activates the virtual environment. You should see `(venv)` appear in your terminal prompt.
+
+4. **Install dependencies:**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Set your API key:**
+5. **Set your API key:**
 
    Create a `.env` file in the project root:
 
@@ -63,7 +76,7 @@ claude-certification-agent-tooluse-and-endturn-poc/
 ## Run
 
 ```bash
-python agent.py
+python3 agent.py
 ```
 
 You should see output similar to:
